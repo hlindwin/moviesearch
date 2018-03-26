@@ -1,3 +1,6 @@
 venv
 .c9
 "
+.DS_Store
+__pycache__/forms.cpython-36.pyc
+"\342\200\235/.DS_Store"
