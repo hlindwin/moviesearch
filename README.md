@@ -13,3 +13,10 @@ or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
 
 Happy coding!
 
+
+nvm install v9.9.0  
+npm install -g cli-engine-command@8.0.0 
+npm install -g heroku-cli 
+
+
+pip freeze>requirements.txt
