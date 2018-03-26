@@ -1,4 +1,5 @@
 import scrapy
+import re
 
 
 class QuotesSpider(scrapy.Spider):
@@ -158,6 +159,13 @@ class QuotesSpider(scrapy.Spider):
    
 
     def parse(self, response):
+        # tree = open(response, encoding='utf-8', errors='replace')
+        # tree = tree.read().splitlines()
+        # for row in tree:
+        #     if row.startswith('	GlobalsObj.CMS_JSON'):
+        #         #print(row)
+        #         description = re.findall(r"\{([^}]+)\}", row)
+        #         print(description)
         page = response.url.split("/")[-1]
         filename = 'quotes-%s.html' % page
         with open(filename, 'wb') as f:

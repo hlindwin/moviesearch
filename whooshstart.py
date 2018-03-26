@@ -25,9 +25,24 @@ for root, dirs, files in os.walk(data_path):
     for file in [f for f in files if f.endswith('.json')]:
         file_path = os.path.join(data_path, file)
         with open(file_path) as f:
+            #print(file_path)
             data = json.loads(''.join(f.readlines()))
+            #print(data["_type"])
+            try:
+                writer.add_document(name=data['_type'], description=''.join(data['description']), path=data['url'])
+            except:
+                continue
+            
+for root, dirs, files in os.walk(data_path):
+    for file in [f for f in files if f.endswith('.json')]:        
+        file_path = os.path.join(data_path, file)
+        with open(file_path) as f:
+            #print(file_path)
+            data = json.loads(''.join(f.readlines()))    
             for a in data:
-
+               # print(a,v)
+                #input()
+                #writer.add_document(name=a['_type'], description=''.join(a['description']), path=a['url'])
             #print(data[1]['description'][0], data[1]['_type'], data[1]["url"])
             # didn't work ---- print(data[]['description'][0], data[]['_type'], data[]["url"])
 
