@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-# from models import db, User # 
+# from models import db, User #
 from forms import SearchForm
 #from searching import searching
 
@@ -26,5 +26,28 @@ def search():
   elif request.method == "GET":
     return render_template('index.html', form=form)
 
-if __name__ == "__main__":
-  app.run(debug=True)
+if __name__ == '__main__':
+  app.debug = True
+  port = int(os.environ.get("PORT", 5000))
+  app.run(host='0.0.0.0', port=port)
+
+s = """from scrapy import Selector
+import datetime
+import json
+import re
+
+#from scrapy
+
+#b = 'rawff.html'
+b = 'ffbabies.html'
+#response = open('other.html', 'r', errors='replace')
+tree = open(b, encoding='utf-8', errors='replace')
+
+
+tree = tree.read().splitlines()
+for row in tree:
+    if row.startswith('	GlobalsObj.CMS_JSON'):
+        #print(row)
+        description = re.findall(r"\{([^}]+)\}", row)
+        print(description)"
+        """
