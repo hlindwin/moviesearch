@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="container signup-section">
+    <div class="section-content">
+      <h2>Movie search</h2>
+
+      <form method="POST" action="/">
+        {{ form.hidden_tag() }}
+
+        <div class="form-group">
+          {{ form.SearchField.label }}
+
+          {% if form.SearchField.errors %}
+            {% for error in form.SearchField.errors %}
+              <p class="error-message">{{ error }}</p>
+            {% endfor %}
+          {% endif %}
+
+          {{ form.SearchField }}
+        </div>
+
+        {{ form.submit(class="btn-primary") }}
+      </form>
+    </div>
+    {% for r in results %}
+      <ul>
+        <li>
+          {{ r['path'] }}
+        </li>
+      </ul>
+      {% endfor %}
+
+  </main>
+  This is a template from Lynda Learning flask
+
+{% endblock %}
