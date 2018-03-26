@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-# from models import db, User # TODO need to add in db to track what people are searching
+# from models import db, User # 
 from forms import SearchForm
 #from searching import searching
 
@@ -19,9 +19,9 @@ def search():
 
   if request.method == "POST":
 
-      searchedtext = form.SearchField.data
-      searchresults = searching(searchedtext)
-      return render_template('index.html', form=form, results=searchresults, cats="cats")
+     # searchedtext = form.SearchField.data
+     # searchresults = searching(searchedtext)
+      return render_template('index.html', form=form) #, results=searchresults, cats="cats")
 
   elif request.method == "GET":
     return render_template('index.html', form=form)
