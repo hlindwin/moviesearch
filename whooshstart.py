@@ -1,3 +1,13 @@
+#this is the whoosh python file
+#use this to make your search engine
+# aka an index
+# whoosh has good documentation
+# be patient and work through it and you'll learn a lot! 
+# --- be patient: I am projecting a bit because, sometimes, if I can't find an
+# --- answer in the first few seconds, I stop reading.  I need patience.
+# http://whoosh.readthedocs.io/en/latest/intro.html
+
+
 # step 1: Make the schema
 
 from whoosh.fields import Schema, STORED, ID, KEYWORD, TEXT
