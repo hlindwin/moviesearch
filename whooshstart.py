@@ -19,6 +19,15 @@ writer = ix.writer()
 import json
 import os
 
+# Below is importing the json files and adding them to the index.
+
+#why do I have two of these things that look similiar
+#It is because the different types of json files. One (pixar.json) has a bunch 
+#of different films / json things in it. 
+# The focus features json files only have one film in them.
+# so parsing those required different ways. I probably could have go it to work
+# with an if or try statement, but I was in a hurry and did it this way!
+
 data_path = os.path.normpath(os.path.join(os.getcwd(), 'data'))
 #data_path = os.path.normpath(os.path.join(os.getcwd()))
 for root, dirs, files in os.walk(data_path):

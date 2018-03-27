@@ -25,8 +25,28 @@
     </div>
     {% for r in results %}
       <ul>
-        <li>
-         <a href="{{ r['path'] }}">{{ r['path'] }}</a> 
+        <li>  <!-- ok, so why did I do this? with the if statements...
+                It's because some of the paths don't have http:// infront of them
+                - from my parsing them this way (ie, stripping the http:// ...
+                I didn't feel like redoing that parsing (bc this seemed easier
+                - I would have to do some copy and pasting of the resulting json
+                - files or clean up that process...)
+                so I fixed the lack of http with with an if statement here
+                
+                
+                Also note that http will resolve to https but not reverse
+                .... as far as I can tell testing two sites ...
+                so, I go to http vs http
+                -->
+         {% if  r['path'].startswith('htt') %}
+           
+               <a href="{{ r['path'] }}">{{ r['path'] }}</a> 
+        
+           {% else %}
+              
+               <a href="{{ 'http://'+r['path'] }}">{{ 'http://'+r['path'] }}</a> 
+               
+        {% endif %}
         </li>
       </ul>
       {% endfor %}
