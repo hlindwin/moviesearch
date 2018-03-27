@@ -10,6 +10,7 @@ https://docs.google.com/presentation/d/18oSHwDSNXn7o_N4aLPtCD1x9ai28DxXNh9J6pC7f
 ....
 
 What technolgies or code did I use to make this?
+
     python - the programming language
     
     flask - the website builder
@@ -20,6 +21,8 @@ What technolgies or code did I use to make this?
     scrapy - a web scraping and spider tool
         portia - the graphic user interface of scrapy
         
+    cloud9 - where I did most of the coding and development
+    
     heroku - where I deployed the app 
     
         Heroku hosts this code and turns it into a website
