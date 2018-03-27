@@ -9,25 +9,26 @@ https://docs.google.com/presentation/d/18oSHwDSNXn7o_N4aLPtCD1x9ai28DxXNh9J6pC7f
 
 ....
 folder and file explaination
-forms.py - flask file to make a form
-hello.py - simple flask app to make sure things are working
-Procfile - required for heroku to work - note this one is for if you aren't 
-    using a db
-Readme.md - this file
-requirements.txt - required to make the app work in heroku and for ppl who 
-    download it and want to install the packages
-routes.py - where I made the core of the flask app
-searching.py - where I search using whoosh
-whooshstart.py - where I build the search engine
-tutorial - scrapy project
-tutorial/test.py - where I convert the html to json 
-tutorial/tutorial/spiders/scrape1.py - where I got the html
-    I used wikipedia to generate the list of films and Excel to clean it up for 
-    for this scraping
-templates - where the html files site
-static - where the css is
-index - whoosh makes this when it makes the index for the search engine
-data - where I put the json. pixar.json came from portia
+
+    forms.py - flask file to make a form
+    hello.py - simple flask app to make sure things are working
+    Procfile - required for heroku to work - note this one is for if you aren't 
+        using a db
+    Readme.md - this file
+    requirements.txt - required to make the app work in heroku and for ppl who 
+        download it and want to install the packages
+    routes.py - where I made the core of the flask app
+    searching.py - where I search using whoosh
+    whooshstart.py - where I build the search engine
+    tutorial - scrapy project
+    tutorial/test.py - where I convert the html to json 
+    tutorial/tutorial/spiders/scrape1.py - where I got the html
+        I used wikipedia to generate the list of films and Excel to clean it up for 
+        for this scraping
+    templates - where the html files site
+    static - where the css is
+    index - whoosh makes this when it makes the index for the search engine
+    data - where I put the json. pixar.json came from portia
 
 
 What technolgies or code did I use to make this?
