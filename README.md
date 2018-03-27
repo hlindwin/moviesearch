@@ -141,6 +141,8 @@ How I learned to do those technolgies:
                     or if from heroku
                     
                 git pull heroku master --rebase
+                
+            if you use github and heroku, remember to push changes to both of them
             
         there are a few demos now. 
         I have definitely erased projects before!
