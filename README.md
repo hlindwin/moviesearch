@@ -8,6 +8,27 @@ My slides, from the presentation at Columbus Ohio Python Users Group
 https://docs.google.com/presentation/d/18oSHwDSNXn7o_N4aLPtCD1x9ai28DxXNh9J6pC7fELI/edit?usp=sharing
 
 ....
+folder and file explaination
+forms.py - flask file to make a form
+hello.py - simple flask app to make sure things are working
+Procfile - required for heroku to work - note this one is for if you aren't 
+    using a db
+Readme.md - this file
+requirements.txt - required to make the app work in heroku and for ppl who 
+    download it and want to install the packages
+routes.py - where I made the core of the flask app
+searching.py - where I search using whoosh
+whooshstart.py - where I build the search engine
+tutorial - scrapy project
+tutorial/test.py - where I convert the html to json 
+tutorial/tutorial/spiders/scrape1.py - where I got the html
+    I used wikipedia to generate the list of films and Excel to clean it up for 
+    for this scraping
+templates - where the html files site
+static - where the css is
+index - whoosh makes this when it makes the index for the search engine
+data - where I put the json. pixar.json came from portia
+
 
 What technolgies or code did I use to make this?
 
@@ -25,6 +46,8 @@ What technolgies or code did I use to make this?
     
     heroku - where I deployed the app 
         Heroku hosts this code and turns it into a website
+    
+    html/css - basic understanding of websites
         
     git - I used this to push code to heroku and github
         I also use git to download and upload code to various cloud9 environments
@@ -162,6 +185,12 @@ How I learned to do those technolgies:
             answer is outside your project folder. Then cd aka change directory
             into your project folder.
             
+    heroku 
+        I used their docs and searched google
+        
+    html
+        I learned in 2003 or 2004. I used http://www.yourhtmlsource.com/
+        
 If you downloaded this code and want to get it to work, you will need to:
 1) Download and install python3 - go for the newest version
 2) create a virtualenv (recommended)
@@ -183,7 +212,7 @@ git
    
         git ls-files file_name
         
-    removing files
+    removing files from git not directory
             
         For single file:
         
