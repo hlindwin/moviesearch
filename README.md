@@ -117,7 +117,45 @@ How I learned to do those technolgies:
             $ npm install -g cli-engine-command@8.0.0 
             $ npm install -g heroku-cli 
 
+    git
+        this wasn't easy to learn. I did a bunch of googling.
+        My friends Greg Rearden https://www.linkedin.com/in/gregoryrearden
+        and Daniel Lecklider https://www.linkedin.com/in/daniel-lecklider
+        helped me figure it out initially.
+        I also learned from upskillcourses's videos.
+       
+        Essentially you need these commands
+            setup
+                git init
+                git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+                
+            once things are setup
+                git add .  # that adds stuff 
+                git status # see what you added
+                git commit -m 'a comment is required'
+                git push origin master #you have now updated the thing
+                
+            if you made changes somewhere else
+                git pull origin master
+                
+                    or if from heroku
+                    
+                git pull heroku master --rebase
+            
+        there are a few demos now. 
+        I have definitely erased projects before!
+        practice on some dummy repos and back up your stuff as you learn
+        https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+        
+        I didn't like https://try.github.io/levels/1/challenges/1
+        
 
+    virtualenv
+        their documentation is good. https://virtualenv.pypa.io/en/stable/
+        I was never really sure where to put the virtualenv. I think the best 
+            answer is outside your project folder. Then cd aka change directory
+            into your project folder.
+            
 If you downloaded this code and want to get it to work, you will need to:
 1) Download and install python3 - go for the newest version
 2) create a virtualenv (recommended)
@@ -134,17 +172,24 @@ git
     One of them created a folder named: ”/
     I think that happened when it was trying to install or update nvm. bc
     '”/home/ec2-user/.nvm”/versions/node/v9.9.0/share/systemtap/tapset/node.stp'
-    git ls-files file_name
-    
-    For single file:
-    
-        git rm --cached mylogfile.log
-    
-    For single directory:
-    
-        git rm --cached -r mydirectory
+   
+   listing files in a github
+   
+        git ls-files file_name
+        
+    removing files
+            
+        For single file:
+        
+            git rm --cached mylogfile.log
+        
+        For single directory:
+        
+            git rm --cached -r mydirectory                          
 
-
+    pushing to github
+        git remote add origin https://github.com/hlindwin/moviesearch.git
+            git push -u origin master
 
          ___        ______     ____ _                 _  ___  
         / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
