@@ -20,7 +20,12 @@ Folder and file explaination:
     routes.py - where I made the core of the flask app
     searching.py - where I search using whoosh
     whooshstart.py - where I build the search engine
-    tutorial - scrapy project
+    tutorial - scrapy project tutorial when you run 
+        $ scrapy startproject tutorial
+        *.html - those are crawled pages. Note: * means any characters 
+            aka wildcard
+        *.json - those are scraped html pages turned into json
+        *.py - those came with the tutorial from scrapy except listed below
     tutorial/test.py - where I convert the html to json 
     tutorial/tutorial/spiders/scrape1.py - where I got the html
         I used wikipedia to generate the list of films and Excel to clean it up for 
