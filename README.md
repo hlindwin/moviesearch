@@ -7,13 +7,13 @@ My slides, from the presentation at Columbus Ohio Python Users Group
     on March 26, 2018 are here:
 https://docs.google.com/presentation/d/18oSHwDSNXn7o_N4aLPtCD1x9ai28DxXNh9J6pC7fELI/edit?usp=sharing
 
-....
-folder and file explaination
+
+Folder and file explaination:
 
     forms.py - flask file to make a form
     hello.py - simple flask app to make sure things are working
     Procfile - required for heroku to work - note this one is for if you aren't 
-        using a db
+        using a database
     Readme.md - this file
     requirements.txt - required to make the app work in heroku and for ppl who 
         download it and want to install the packages
