@@ -25,10 +25,10 @@ Folder and file explaination:
     tutorial/tutorial/spiders/scrape1.py - where I got the html
         I used wikipedia to generate the list of films and Excel to clean it up for 
         for this scraping
-    templates - where the html files site
-    static - where the css is
+    templates - where the html files sit. Required by flask
+    static - where the css is. Required by flask
     index - whoosh makes this when it makes the index for the search engine
-    data - where I put the json. pixar.json came from portia
+    data - where I put the json. Pixar.json came from portia
 
 
 What technolgies or code did I use to make this?
