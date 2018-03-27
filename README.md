@@ -24,8 +24,8 @@ What technolgies or code did I use to make this?
     cloud9 - where I did most of the coding and development
     
     heroku - where I deployed the app 
-    
         Heroku hosts this code and turns it into a website
+        
     git - I used this to push code to heroku and github
         I also use git to download and upload code to various cloud9 environments
         as well as my computer
@@ -65,6 +65,7 @@ What technolgies or code did I use to make this?
             even if they aren't perfect.
 
 How I learned to do those technolgies:
+    
     python
         Python for Everybody https://www.py4e.com/
             the book is free on that website
